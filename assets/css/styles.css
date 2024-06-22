@@ -2,8 +2,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
     position: relative;
     padding-bottom: 100px; /* Ensure space for fixed footer */
     margin-bottom: 0; /* Remove default margin */
@@ -16,32 +16,82 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #343a40 !important; /* Dark background */
+    background-color: #343a40; /* Dark background */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffc107; /* Yellow bottom border */
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease;
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
+    color: #ffc107; /* Yellow text */
+}
+
+.navbar-brand:hover {
+    color: #ffc107; /* Yellow hover color */
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color: #fff; /* White text */
     font-size: 1.1rem;
     text-transform: uppercase;
     padding: 8px 15px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffc107;
+    color: #ffc107; /* Yellow hover color */
+}
+
+/* Active link styles */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffc107; /* Yellow active link color */
+}
+
+/* Toggler styles */
+.navbar-toggler {
+    border-color: #ffc107; /* Yellow border */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffc107; /* Yellow toggler icon */
+}
+
+/* Responsive navbar collapse styles */
+@media (max-width: 991.98px) {
+    .navbar {
+        background-color: #343a40; /* Dark background */
+    }
+
+    .navbar-nav {
+        background-color: #343a40; /* Dark background */
+        padding: 10px 0;
+    }
+
+    .navbar-collapse {
+        background-color: #343a40; /* Dark background */
+        border-top: 2px solid #ffc107; /* Yellow top border */
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff; /* White text */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ffc107; /* Yellow hover color */
+    }
 }
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('assets/img/kerala.jpg');
+    background-image: url('assets/img/kerala.jpg'); /* Hero background image */
     background-size: cover;
     background-position: center;
-    color: #0a0a0a;
+    color: #0a0a0a; /* Dark text color */
     text-align: center;
     padding: 100px 0;
     margin-bottom: 40px; /* Reduce margin after hero section */
@@ -68,7 +118,7 @@ body {
 
 /* About Section Styles */
 #about {
-    background-color: #fff;
+    background-color: #fff; /* White background */
     padding: 60px 0;
     margin-bottom: 40px; /* Reduce margin after about section */
 }
@@ -87,6 +137,8 @@ body {
 .card {
     border: none;
     transition: all 0.3s ease;
+    height: 100%; /* Ensure cards take full height */
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
 .card:hover {
@@ -95,19 +147,29 @@ body {
 }
 
 .card-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem; /* Reduce font size */
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduce margin bottom */
 }
 
 .list-group-item {
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduce font size */
+    padding: 8px 0; /* Adjust padding as needed */
 }
+
+.career-img {
+    max-width: 100%; /* Limit maximum width */
+    max-height: 500px; /* Limit maximum height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+
+
 
 /* Photos Section Styles */
 #photos {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Light gray background */
     padding: 60px 0;
     margin-bottom: 40px; /* Reduce margin after photos section */
 }
@@ -139,16 +201,16 @@ th, td {
 }
 
 th {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text */
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Light gray background */
 }
 
 tbody tr:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Gray hover background */
 }
 
 /* Contact Section Styles */
@@ -163,25 +225,30 @@ tbody tr:hover {
 }
 
 .btn-primary {
-    background-color: #343a40;
-    border-color: #343a40;
+    background-color: #343a40; /* Dark background */
+    border-color: #343a40; /* Dark border */
     padding: 10px 30px;
     font-size: 1.1rem;
     text-transform: uppercase;
 }
 
 .btn-primary:hover {
-    background-color: #23272b;
-    border-color: #23272b;
+    background-color: #23272b; /* Dark hover background */
+    border-color: #23272b; /* Dark hover border */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #1e1e1e; /* Dark background */
+    color: #fff; /* White text */
     text-align: center;
     padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* General margin and padding adjustments */
+body {
+    margin-bottom: 60px; /* Adjust for fixed footer */
 }
