@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shahajas Thekkan - Professional footballer known for his skills and contributions to Kerala Blasters and Gokulam Kerala FC.">
+    <meta name="description"
+        content="Shahajas Thekkan - Professional footballer known for his skills and contributions to Kerala Blasters and Gokulam Kerala FC.">
     <title>Photo Gallery - Shahajas Thekkan</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
     <style>
         body {
-            padding-top: 56px; /* Adjust according to the height of your navbar */
+            padding-top: 56px;
         }
-        
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
+
+        .card {
+            border: none;
+            transition: all 0.3s ease;
         }
-        .gallery-item img {
-            transition: transform 0.2s ease;
-        }
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-        .modal-content img {
+
+        .card-img-top {
+            border-radius: 5px;
             width: 100%;
-            height: auto;
+            height: 350px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
         }
-        /* Space below navbar */
-        .space-below-navbar {
-            margin-top: 20px; /* Adjust the margin as needed */
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
+
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Shahajas Thekkan</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -53,8 +55,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#career">Career</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#photos">Photos</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gallery.html">Photos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#stats">Stats</a>
@@ -64,44 +66,40 @@
                     </li>
                 </ul>
             </div>
-            
         </div>
     </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Space below navbar -->
-        <div class="space-below-navbar"></div>
-
         <!-- Photo Gallery Section -->
         <section id="photos" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4">Photo Gallery</h2>
                 <div class="row">
                     <!-- Gallery Items -->
-                    <div class="col-md-4 col-lg-3 mb-4">
-                        <div class="gallery-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card shadow-sm">
                             <a href="#" data-toggle="modal" data-target="#photoModal1">
                                 <img class="card-img-top" src="assets/img/adu/adu3.jpg" alt="Photo 1">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-3 mb-4">
-                        <div class="gallery-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card shadow-sm">
                             <a href="#" data-toggle="modal" data-target="#photoModal2">
                                 <img class="card-img-top" src="assets/img/adu/adu19.jpg" alt="Photo 2">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-3 mb-4">
-                        <div class="gallery-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card shadow-sm">
                             <a href="#" data-toggle="modal" data-target="#photoModal3">
                                 <img class="card-img-top" src="assets/img/adu/adu21.jpg" alt="Photo 3">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-3 mb-4">
-                        <div class="gallery-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card shadow-sm">
                             <a href="#" data-toggle="modal" data-target="#photoModal4">
                                 <img class="card-img-top" src="assets/img/adu/adu1.jpg" alt="Photo 4">
                             </a>
@@ -114,7 +112,8 @@
     </main>
 
     <!-- Modals -->
-    <div class="modal fade" id="photoModal1" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel1" aria-hidden="true">
+    <div class="modal fade" id="photoModal1" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel1"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -129,7 +128,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="photoModal2" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel2" aria-hidden="true">
+    <div class="modal fade" id="photoModal2" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel2"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -144,7 +144,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="photoModal3" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel3" aria-hidden="true">
+    <div class="modal fade" id="photoModal3" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel3"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -159,7 +160,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="photoModal4" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel4" aria-hidden="true">
+    <div class="modal fade" id="photoModal4" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel4"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -181,4 +183,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
