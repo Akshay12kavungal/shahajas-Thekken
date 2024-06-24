@@ -140,7 +140,11 @@ body {
     height: 100%; /* Ensure cards take full height */
     overflow: hidden; /* Ensure content does not overflow */
 }
-
+/* .card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+} */
 
 .card:hover {
     transform: translateY(-5px);
@@ -252,12 +256,4 @@ footer {
 /* General margin and padding adjustments */
 body {
     margin-bottom: 60px; /* Adjust for fixed footer */
-}
-
-@media (min-width: 576px) {
-    .card-img-top {
-        width: 100%;
-        height: 15vw;
-        object-fit: cover;
-    }
 }
